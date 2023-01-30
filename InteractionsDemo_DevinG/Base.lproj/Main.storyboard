@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,25 +13,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InteractionsDemo_DevinG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-7F-Idi">
-                                <rect key="frame" x="38" y="137" width="317" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-7F-Idi">
+                                <rect key="frame" x="38" y="125" width="314" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="yEt-Wy-rcm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1RO-PZ-eob">
-                                <rect key="frame" x="38" y="179" width="308" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1RO-PZ-eob">
+                                <rect key="frame" x="38" y="167" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZl-tt-SyL">
-                                <rect key="frame" x="149" y="308" width="95" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZl-tt-SyL">
+                                <rect key="frame" x="147.66666666666666" y="296" width="95" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Click me!"/>
                                 <connections>
@@ -41,6 +41,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hZl-tt-SyL" firstAttribute="top" secondItem="1RO-PZ-eob" secondAttribute="bottom" constant="95" id="2BP-zM-Kw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1RO-PZ-eob" secondAttribute="trailing" constant="47" id="6Op-kb-AxT"/>
+                            <constraint firstItem="gpV-7F-Idi" firstAttribute="centerX" secondItem="hZl-tt-SyL" secondAttribute="centerX" id="9Zg-pa-xCI"/>
+                            <constraint firstItem="gpV-7F-Idi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="IOz-d8-wiy"/>
+                            <constraint firstItem="gpV-7F-Idi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="NM0-Z8-teI"/>
+                            <constraint firstItem="gpV-7F-Idi" firstAttribute="leading" secondItem="1RO-PZ-eob" secondAttribute="leading" id="iwQ-hD-msM"/>
+                            <constraint firstItem="1RO-PZ-eob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="l6j-cX-ibN"/>
+                            <constraint firstItem="gpV-7F-Idi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uyv-Pu-v3h"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="sampleLabel" destination="gpV-7F-Idi" id="3ce-C5-KrB"/>
